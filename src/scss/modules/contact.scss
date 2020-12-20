@@ -1,6 +1,9 @@
 .contact {
   background: $lighterBlue;
   padding: 64px 16px 88px;
+  @media (min-width: $desktop) {
+    padding-top: 80px;
+  }
   &__description {
     color: $text;
     font-weight: 300;
@@ -18,9 +21,11 @@
     font-size: 36px;
     line-height: 48px;
     text-align: center;
+    margin: 0;
     @media (min-width: $desktop) {
       font-size: 48px;
       line-height: 56px;
+      margin-bottom: 40px;
     }
   }
   &__links {
