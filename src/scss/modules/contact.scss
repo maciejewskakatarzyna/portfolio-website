@@ -7,6 +7,10 @@
     font-size: 16px;
     line-height: 32px;
     text-align: center;
+    @media (min-width: $desktop) {
+      font-size: 20px;
+      line-height: 40px;
+    }
   }
   &__header {
     color: $textDark;
@@ -14,9 +18,20 @@
     font-size: 36px;
     line-height: 48px;
     text-align: center;
+    @media (min-width: $desktop) {
+      font-size: 48px;
+      line-height: 56px;
+    }
   }
   &__links {
     text-align: center;
+    @media (min-width: $desktop) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 640px;
+      margin: 128px auto 0;
+    }
   }
   &__mail {
     border-radius: 64px;
@@ -39,7 +54,11 @@
   list-style-type: none;
   display: flex;
   justify-content: center;
-  padding: 56px 43px 64px;
+  padding: 0;
+  margin: 56px 64px;
+  @media (min-width: $desktop) {
+    margin: 0;
+  }
   &__link {
     width: 48px;
     height: 48px;
